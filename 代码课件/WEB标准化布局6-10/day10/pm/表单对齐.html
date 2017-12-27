@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表单对齐</title>
+	<style>
+	form{ font-family:微软雅黑;width:320px; border:1px red solid; font-size: 14px; font-weight: bold;}
+	p{ overflow: hidden;}
+	lable{ width: 60px; height: 40px;  line-height: 40px; text-align: right; float:left; margin-right: 10px;}
+	input:not(#submit){float: left; height: 16px; padding: 10px; border:1px solid silver;}
+	#tel,#pwd{ width: 228px;}
+	#verifycode{ width: 118px;margin-right: 10px;}
+	#submit{ width: 100px; height: 40px; border:1px solid gray; padding: 0;background-color:#f1f1f1;}
+	</style>
+</head>
+<body>
+	<form action="">
+		<p>
+			<lable for="tel">手机号</lable>
+			<input id="tel" type="text">
+		</p>
+		<p>
+			<lable for="pwd">密码</lable>
+			<input id="pwd" type="password">
+		</p>
+		<p>
+			<lable for="verifycode">验证码</lable>
+			<input id="verifycode" type="text">
+			<input id="submit" type="submit">
+		</p>
+	</form>
+</body>
+</html>

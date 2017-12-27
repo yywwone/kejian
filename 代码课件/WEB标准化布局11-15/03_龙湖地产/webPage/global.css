@@ -1,0 +1,15 @@
+*{padding:0;margin:0;font-size:12px;}
+body{ background-color:#00327c;}
+.parent{width:1002px; height:867px; background-image:url(images/background.jpg);margin:0 auto}
+.bg{margin:0 auto;width:900px;overflow:hidden}
+.logo{ background-image:url(images/logo.jpg);width:900px; height:80px;}
+.logo li{ list-style-type:none;float:left;padding:0 5px;}
+.logo ul{ float:right;margin-top:5px;width:150px}
+.logo a{ color:#97d1ff; text-decoration:none;text-align:center;line-height:20px;background-color:#00317a;width:60px;height:20px;display:block}
+.logo a:hover{color:#FFF; text-decoration:underline}
+.navBar li{ list-style-type:none;float:left;width:97px; text-align:center;padding-right:35px}
+.navBar{width:900px; height:37px; background-color:#000;margin:0 auto;}
+.navBar a{color:#FFF; text-decoration:none;font-size:14px; font-weight:bold;line-height:37px;display:block}
+.navBar a:hover{ background-image:url(images/choose.jpg);width:97px; height:37px;color:#20acff}
+.banner img{width:900px;height:238px;margin-top:10px}
+.content{ background-image:url(images/content.jpg);height:407px;width:878px;margin-top:10px;padding-top:15px;padding-left:22px}

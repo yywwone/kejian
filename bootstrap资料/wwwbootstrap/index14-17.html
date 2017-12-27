@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+    <meta name="author" content="">
+      <title>Bootstrap</title>
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+     <link href="./css/bootstrap-theme.min.css" rel="stylesheet">
+    <style>
+	
+	</style>
+       <script>
+ 
+     
+     </script>  
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+<hr>
+<div class="container">
+<br>
+<br>
+<button type="button" id="btn1" class="btn btn-default" data-toggle="tooltip"  data-html="true" data-delay="200"  title="do it">this is a tooltip</button>
+
+<span id="example"  title="do it">this is a tooltip</span>
+<br>
+<a id="exam" href="#"data-toggle="tooltip" title="do it">this is a tooltip</a>
+<hr>
+<br><br>
+<button type="button" id="btn2" data-content="this is popover content " class="btn btn-default" data-toggle="popover" data-trigger="focus" title="popover are fun">cilck see popover</button> Placed at the end of the document so the pages load faster<br><br>
+<a  href="#" role="button"  data-content="this is popover content " class="btn btn-default" data-toggle="popover" data-trigger="focus" title="popover are fun" tabindex="0">cilck see popover</a> Placed at the end of the document so the pages load faster
+
+
+</div>
+<br><br><br>
+ 
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>-->
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script>
+ $(document).ready(function(e) {
+   // $('[data-toggle="tooltip"]').tooltip();
+   $('#exam').tooltip();
+   $('#btn1').tooltip();
+   $('#example').tooltip({
+   html:true,
+   delay:200,
+   trigger:"click",
+   container:'body'
+   });
+   $('[data-toggle="popover"]').popover();
+});
+     
+     </script>
+  
+
+</body></html>

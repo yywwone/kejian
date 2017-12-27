@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+    <meta name="author" content="">
+      <title>Bootstrap</title>
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <style>
+	#myname{
+		width:100px;}
+	</style>
+       <script>
+ 
+     
+     </script>  
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+<hr>
+<div class="container">
+<br>
+<br>
+
+
+
+<a class=" bg-info" data-toggle="modal"   href="#" data-target="#mymodalp" data-imagetitle="title111" data-imagesource="pic/banner03.gif"><img src="pic/banner03.gif" alt="pic11" class="img-thumbnail"></a>
+
+<a class=" bg-info" data-toggle="modal"   href="#" data-target="#mymodalp" data-imagetitle="title222" data-imagesource="pic/casess_banner.gif"><img src="pic/casess_banner.gif" alt="pic22" class="img-thumbnail"></a>
+
+  
+     
+      <div class="modal fade"  id="mymodalp">
+    	<div class="modal-dialog">
+        	<div class="modal-content">
+            	<div class="modal-header">
+                <button type="button"   class="btn btn-default close" data-dismiss="modal" aria-label="close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title"> Do you love dandylions</h4>
+            </div>
+            <div class="modal-body">
+           
+            </div>
+            <div class="modal-footer">
+            <button type="button"   class="btn btn-default" data-dismiss="modal" >Close</button>
+            </div>
+        </div>
+     </div>
+     
+     
+</div>
+<br><br><br>
+ 
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>-->
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script>
+ $(document).ready(function(e) {
+  $('#mymodalp').modal({backdrop:'static',show:false});
+  $('#mymodalp').on('show.bs.modal',function(event)
+  {
+	  var button=$( event.relatedTarget);
+	  var title=button.data('imagetitle');
+	  var source=button.data('imagesource');
+	  var modal=$(this);
+	  modal.find('.modal-title').text(title);
+	  modal.find('.modal-body').html('<img src="'+source+'"alt="'+title+'" class="center-block">');
+	  
+	  }
+  );
+});
+     
+     </script>
+  
+
+</body></html>

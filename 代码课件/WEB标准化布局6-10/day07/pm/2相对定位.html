@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>相对定位</title>
+<style>
+	#father{ margin-top:30px; margin-left:30px;
+	border:1px solid sliver; background-color:#b7f1ff;}
+	#father div{ width:100px; height:60px; margin:10px;
+	border:1px solid silver; background-color:#fa16c9;}
+	#son2{ position:relative; top:20px; left:40px;}
+</style>
+</head>
+
+<body>
+<div id="father">
+	<div>第1个无定位的div元素</div>
+    <div id="son2">相对定位的div元素</div>
+    <div>第2个无定位的div元素</div>
+</div>
+</body>
+</html>

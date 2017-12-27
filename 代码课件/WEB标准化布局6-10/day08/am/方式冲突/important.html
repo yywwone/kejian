@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>important</title>
+<style>
+#outer strong{ color:red;}/*权重=100+1=101*/
+#outer .inner strong{ color:green;}/*权重=100+10+1=111*/
+.inner strong{ color:blue;}/*权重=10+1=11,这个就不好使*/
+.inner span strong{ color:purple;} /*权重=10+1+1=12*/
+strong{ color:pink !important;}
+</style>
+</head>
+
+<body>
+<div id="outer">
+	<p class="inner">
+    	<span><strong>咕叽咕叽,咕咕唧唧</strong></span>
+    </p>
+</div>
+</body>
+</html>

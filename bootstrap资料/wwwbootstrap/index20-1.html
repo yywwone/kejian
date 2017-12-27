@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+    <meta name="author" content="">
+      <title>Bootstrap</title>
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <style>
+
+	</style>
+       <script>
+ 
+     
+     </script>  
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body >
+<hr>
+<div class="container" style="background-color:#CCF">
+<hr>
+    <div class="row">
+        <div class="col-sm-6">
+        <div id="mycarousel" class="carousel slide" data-ride="carousel">
+     <ol class="carousel-indicators">
+     <li  data-target="#mycarousel" data-slide-to="0" class="active"></li>
+     <li  data-target="#mycarousel" data-slide-to="1" ></li>
+     <li  data-target="#mycarousel" data-slide-to="2" ></li>
+     </ol>
+     <div class="carousel-inner" role="listbox" >
+         <figure class="item active">
+         <img src="pic/banner03.gif" alt="pic 1" class="center-block img-responsive"><br><br><br><br>
+         <figcaption class="carousel-caption"> a dandy pic 1 </figcaption>
+         </figure>	
+         <figure class="item">
+         <img src="pic/banner03.gif" alt="pic 1" class="center-block img-responsive"><br><br><br><br>
+         <figcaption class="carousel-caption"> a dandy pic 2 </figcaption>
+         </figure>	
+         <figure class="item">
+         <img src="pic/banner03.gif" alt="pic 1" class="center-block img-responsive"><br><br><br><br>
+         <figcaption class="carousel-caption"> a dandy pic 3 </figcaption>
+         </figure>	
+     </div>
+     
+     <a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev"><span class="glyphicon  glyphicon-chevron-left" aria-hidden="true"></span></a>
+      <a class="right carousel-control" href="#mycarousel" role="button" data-slide="next"><span class="glyphicon  glyphicon-chevron-right" aria-hidden="true"></span></a>
+ </div> 
+  
+        </div>
+        <div class="col-sm-6">
+        test
+        </div>
+    </div>
+ 
+       
+</div>
+<br><br><br>
+ 
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>-->
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script>
+ $(document).ready(function(e) {
+   $('#menu .collapse').on('show.bs.collapse',function()
+   {
+	   var $head=$(this).prev();
+	   $head.find('span').removeClass('glyphicon-chevron-right').addClass('glyphicon-chevron-down');
+	  
+	   }
+   );
+    $('#menu .collapse').on('hide.bs.collapse',function()
+   {
+	   var $head=$(this).prev();
+	   $head.find('span').removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-right');
+	  
+	   }
+   );
+ 
+});
+     
+     </script>
+  
+
+</body></html>

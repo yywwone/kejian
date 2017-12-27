@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+    <meta name="author" content="">
+      <title>Bootstrap</title>
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <style>
+	#myname{
+		width:100px;}
+	</style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+<hr>
+<div class="container">
+ <form action="#">
+ <div class="form-group">
+ <label for="myname">myname</label>
+ <input type="text" autofocus required id="myname" placeholder="youname" class="form-control">
+ </div>
+  <div class="form-group">
+ <label for="homephone">home phone</label>
+ <input type="tel" id="homephone" placeholder="home phone" pattern="\([0-9]{3}\) [0-9]{3}-[0-9]{4}" class="form-control">
+ </div>
+ <div class="form-group has-success has-feedback">
+ <label for="mysuccess">success</label>
+ <input type="text" autofocus required id="mysuccess" placeholder="success" class="form-control">
+ <span class="glyphicon glyphicon-ok  form-control-feedback" aria-hidden="true"></span> 
+ </div>
+ <div class="form-group">
+ <input type="submit" value="contact" class="form-control">
+ </div>
+ </form>
+<hr> 
+ <form action="#" class="form-horizontal">
+  <div class="form-group">
+     <label for="myname" class="col-sm-3 control-label">myname</label>
+     <div class="col-sm-9">
+     <input type="text" autofocus required id="myname" placeholder="youname" class="form-control ">
+     </div>
+ </div>
+  <div class="form-group">
+     <label for="homephone" class="col-sm-3 control-label">home phone</label>
+      <div class="col-sm-9">
+     <input type="tel" id="homephone" placeholder="home phone" pattern="\([0-9]{3}\) [0-9]{3}-[0-9]{4}" class="form-control">
+     </div>
+ </div>
+ <div class="form-group">
+    <label class="col-sm-3 control-label">Email</label>
+    <div class="col-sm-9">
+      <p class="form-control-static">email@example.com</p>
+    </div>
+  </div>
+
+ <div class="form-group">
+     <label for="" class="col-sm-3 control-label"></label>
+      <div class="col-sm-9">
+     <textarea rows="4" class="form-control" id="myname"></textarea>
+      </div>
+ </div>
+ 
+ <div class="form-group">
+     <label for="" class="col-sm-3 control-label"></label>
+      <div class="col-sm-3">
+     <input type="submit" value="contact"  class="form-control">
+     </div>
+     <label for="" class="col-sm-3 control-label"></label>
+ </div>
+ </form>
+ <hr> 
+ <form action="#" class="form-inline">
+ <div class="form-group">
+ <label for="myname">myname</label>
+ <input type="text" autofocus required id="myname" placeholder="youname" class="form-control">
+ </div>
+  <div class="form-group">
+ <label for="homephone">home phone</label>
+ <input type="tel" id="homephone" placeholder="home phone" pattern="\([0-9]{3}\) [0-9]{3}-[0-9]{4}" class="form-control">
+ </div>
+ <div class="checkbox">
+  <label><input type="checkbox" value="login" > remember me1</label>
+  </div>
+  <div class="checkbox">
+  <input type="checkbox" value="login"  aria-label="label for help" >
+  </div>
+ <div class="form-group">
+ <input type="submit" value="login" class="form-control">
+ </div>
+ </form>
+ <hr> 
+ <form action="#" class="form-inline">
+ <div class="form-group">
+     <label for="myname" class="sr-only">myname</label>
+     <div>
+     <input type="text" autofocus required id="myname" placeholder="youname" class="form-control">
+     </div>
+ </div>
+ <div class="form-group">
+     <label for="homephone" class="sr-only">home phone</label>
+     <div><input type="tel" id="homephone" placeholder="home phone" pattern="\([0-9]{3}\) [0-9]{3}-[0-9]{4}" class="form-control">
+     </div>
+ </div>
+ <div class="checkbox disabled">
+  <label><input type="checkbox" value="login" disabled > remember me</label>
+  </div>
+  
+<button type="submit" class="btn btn-default">Login</button>
+ </form>
+ <hr> 
+  <form action="#" class="form-inline">
+ <div class="form-group">
+ <p>
+ 	<div class="input-group ">
+     <label for="cost" class="sr-only">Amount</label>
+     <div class="input-group-addon">$</div>
+     <div>
+     <input type="number" autofocus required id="cost" placeholder="Amount" class="form-control">
+     </div>
+     <div class="input-group-addon">.00</div>
+     </div>
+ </p>
+  <p>
+     <div class="input-group input-group-sm">
+     <label for="cost" class="sr-only">Amount</label>
+     <span class="input-group-addon">$</span>
+     <span>
+     <input type="number" autofocus required id="cost" placeholder="Amount" class="form-control">
+     </span>
+     <span class="input-group-addon">.00</span>
+     </div>
+   </p>  
+ </div>
+
+
+<button type="submit" class="btn btn-default">Login</button>
+ </form>
+<div class="row">
+ <div class="col-lg-6">
+ 	 <div class="input-group">
+     <span class="input-group-addon"><input type="checkbox" id="other" aria-label="Other" value="other"></span>
+     <input type="text"  id="othertext" placeholder="other text" class="form-control" aria-label="Other">
+      </div>    
+  </div>
+   <div class="col-lg-6">
+ 	 <div class="input-group">
+     <span class="input-group-addon"><input type="radio" id="other" aria-label="Other" value="other"></span>
+     <input type="text"  id="othertext" placeholder="other text" class="form-control" aria-label="Other">
+       </div>   
+  </div>
+</div>
+<br><br><br>
+ 
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>-->
+
+  
+
+</body></html>

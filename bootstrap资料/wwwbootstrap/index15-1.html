@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+    <meta name="author" content="">
+      <title>Bootstrap</title>
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <style>
+	#myname{
+		width:100px;}
+	</style>
+       <script>
+ 
+     
+     </script>  
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+<hr>
+<div class="container">
+<br>
+<br>
+<button type="button"  class="btn btn-default" data-toggle="tooltip"  data-html="true" data-delay="200" data-trigger="click" title="do it">this is a tooltip</button>
+<span id="example"  title="do it">this is a tooltip</span>
+
+<button type="button"  class="btn btn-default" data-toggle="modal"   data-target="#mymodalp">click modal</button>
+<a class=" bg-info" data-toggle="modal"   href="#mymodalp">click modal</a>
+
+
+  
+     
+      <div class="modal fade"  id="mymodalp">
+    	<div class="modal-dialog">
+        	<div class="modal-content">
+            	<div class="modal-header">
+                <button type="button"   class="btn btn-default close" data-dismiss="modal" aria-label="close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title"> Do you love dandylions</h4>
+            </div>
+            <div class="modal-body">
+           <div class="container-fluid">
+           <div class="row">
+            <p class="col-sm-3"> So do I!  So do I! So do I! So do I! So do I! So do I!</p>
+            <p class="col-sm-3"> So do I!  So do I! So do I! So do I! So do I! So do I!</p>
+            <p class="col-sm-3"> So do I!  So do I! So do I! So do I! So do I! So do I!</p>
+            <p class="col-sm-3"> So do I!  So do I! So do I! So do I! So do I! So do I!</p>
+           </div>
+           </div>
+            </div>
+            <div class="modal-footer">
+            <button type="button"   class="btn btn-default" data-dismiss="modal" >Close</button>
+            </div>
+        </div>
+     </div>
+     
+     
+</div>
+<br><br><br>
+ 
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>-->
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script>
+ $(document).ready(function(e) {
+   // $('[data-toggle="tooltip"]').tooltip();
+   
+   $('#example').tooltip({
+   html:true,
+   delay:2000,
+   trigger:"click"
+   });
+ //  $('#mymodal').modal('show');
+});
+     
+     </script>
+  
+
+</body></html>
